@@ -15,3 +15,6 @@ jobs:
      username: deploy@deploy.viserx.net
      password: '!L7*9RS]dBm?'
      local-dir: ./blog/
+     
+  - name: Run PHP
+    run: composer install
