@@ -17,4 +17,4 @@ jobs:
      local-dir: ./blog/
      
   - name: Run PHP
-    run: composer install
+    run: ls
