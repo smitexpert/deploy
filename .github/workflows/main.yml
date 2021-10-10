@@ -13,5 +13,5 @@ jobs:
     with:
      server: ftp.viserx.net
      username: deploy@deploy.viserx.net
-     password: !L7*9RS]dBm?
+     password: '!L7*9RS]dBm?'
      local-dir: ./blog/
