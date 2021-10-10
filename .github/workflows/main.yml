@@ -1,0 +1,17 @@
+on: push
+name: Deploy website on push
+jobs:
+ web-deploy:
+  name: Deoply
+  runs-on: ubuntu-latest
+  steps:
+  - name: Get latest code
+    uses: actions/checkout@v2
+    
+  - name: Sync files
+    uses: SamKirkland/FTP-Deoply-Action@4.1.0
+    with:
+     server: ftp.viserx.net
+     username: deploy@deploy.viserx.net
+     password: !L7*9RS]dBm?
+     local-dir: ./blog/
